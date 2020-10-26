@@ -26,20 +26,18 @@ function addPlan(text) {
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = plans.length + 1;
-  const space = document.createTextNode (" ");
+  const space = document.createTextNode(" ");
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (window.location.href.indexOf("main.html") > -1) {
       delBtn.innerText = "Delete";
-    }
-    else {
+    } else {
       delBtn.innerText = "지우기";
     }
   });
   delBtn.addEventListener("click", deletePlan);
   span.innerText = text;
 
-  
   li.appendChild(span);
   li.appendChild(space);
   li.appendChild(delBtn);

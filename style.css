@@ -13,9 +13,6 @@ body,
   height: 100%;
 }
 
-body {
-  overflow: hidden;
-}
 h1 {
   font-weight: bold;
   font-size: 100px;
@@ -42,28 +39,14 @@ h2 {
   color: white;
 }
 
-.darkModeBtn {
-  position: absolute;
-  right: 3%;
-  margin-top: 23%;
-}
-
 .languageBtn {
   position: absolute;
   right: 7%;
   margin-top: 50%;
 }
 
-.languageBtnMain {
-  position: absolute;
-  right: 15%;
-  margin-top: 23%;
-}
-
-.languageBtnMain_kor {
-  position: absolute;
-  right: 15.5%;
-  margin-top: 23%;
+.btnPosition {
+  margin-top: 25%;
 }
 
 .planList {

@@ -46,27 +46,20 @@
         </ul>
       </div>
 
-      <div class="dropdown languageBtnMain">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Select language : English
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="main_kor.html">Korean</a>
+      <div class="text-right mr-2 btnPosition">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select language : English
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="main_kor.html">Korean</a>
+          </div>
         </div>
-      </div>
-
-      <div class="darkModeBtn">
-        <button type="button" class="btn btn-secondary " onclick="setDarkMode()">
-          Dark mode On/Off
+        <button type="button" class="btn btn-secondary" onclick="setDarkMode()">
+          다크모드 켜기/끄기
         </button>
       </div>
+      
     
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
