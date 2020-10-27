@@ -27,6 +27,7 @@ function addPlan(text) {
   const span = document.createElement("span");
   const newId = plans.length + 1;
   const space = document.createTextNode(" ");
+  const checkbox = document.createElement("input");
 
   $(document).ready(function () {
     if (window.location.href.indexOf("main.html") > -1) {
@@ -37,10 +38,14 @@ function addPlan(text) {
   });
   delBtn.addEventListener("click", deletePlan);
   span.innerText = text;
+  checkbox.setAttribute("type", "checkbox");
+  checkbox.setAttribute("class", "checkboxStyle");
 
+  li.appendChild(checkbox);
   li.appendChild(span);
   li.appendChild(space);
   li.appendChild(delBtn);
+
   li.style.paddingTop = "10px";
   li.id = newId;
   planList.appendChild(li);
