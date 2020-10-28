@@ -57,6 +57,16 @@ function addPlan(text) {
   savePlans();
 }
 
+function validateCheckbox() {
+  const checkbox = planList.querySelector("input[type]");
+  if (checkbox.checked) {
+    localStorage.setItem("checkbox", checkbox.checked);
+  } else {
+    const checked = JSON.parse(localStorage.getItem("checkbox"));
+    checkbox.checked = checked;
+  }
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   const planValue = planInput.value;
@@ -76,6 +86,7 @@ function loadPlans() {
 
 function init() {
   loadPlans();
+  validateCheckbox();
   planForm.addEventListener("submit", handleSubmit);
 }
 
